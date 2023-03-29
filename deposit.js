@@ -5,9 +5,8 @@ function Deposit() {
 
   function changeAmount() {
     if (amount <= 0) {
-      let newBankAmount = amount + bankAmount;
-      let bankAmount = newBankAmount;
-      return;
+      setAmount(amount + bankAmount);
+      return setAmount;
     }
   }
 
